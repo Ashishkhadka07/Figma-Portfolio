@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 5px;
+}
+:root {
+  --primary-color: #c778dd;
+  --secondary-color: #abb2bf;
+  --background-color: #282c33;
+}
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1354px;
+  height: 61px;
+  background-color: var(--background-color);
+  padding: 10px 20px;
+  color: #ffffff;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+header nav ul span {
+  color: var(--primary-color);
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+nav li .active {
+  color: #fff;
+  font-weight: 500;
+}
+main {
+  position: relative;
+  top: 100px;
+}
