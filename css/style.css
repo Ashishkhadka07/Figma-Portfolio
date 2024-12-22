@@ -135,7 +135,48 @@ main {
   font-weight: bold;
   color: #ffffff;
 }
-
+.quotation-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-top: 50px;
+}
+blockquote {
+  position: relative;
+  max-width: 700px;
+  font-size: 1.2rem;
+  padding: 20px;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+blockquote p {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+blockquote::before {
+  content: ' " ';
+  font-size: 3rem;
+  position: absolute;
+  top: -20px;
+  color: var(--secondary-color);
+}
+blockquote footer {
+  position: relative;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  border: 1px solid var(--secondary-color);
+}
+blockquote footer::before {
+  content: '"';
+  font-size: 3rem;
+  position: absolute;
+  right: 90%;
+  bottom: -10px;
+  color: var(--secondary-color);
+}
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .introduction {
