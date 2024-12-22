@@ -6,7 +6,7 @@
 * {
   box-sizing: border-box;
   border: 0;
-  margin: 5px;
+  margin: 0;
   background-color: var(--background-color);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -16,11 +16,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1024px;
+  width: 100%;
+  max-width: 1100px;
   height: 61px;
-  /* border: 1px solid #abb2bf; */
-  padding: 10px 20px;
+  padding: 10px 40px;
   color: #ffffff;
+  left: 70px; /* Push header content to avoid overlap with social icons */
 }
 .logo {
   font-size: 1.5rem;
@@ -33,7 +34,7 @@ header nav ul span {
 }
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   list-style: none;
 }
 nav li a {
@@ -42,31 +43,114 @@ nav li a {
   font-size: 1rem;
   transition: all 0.3s ease;
 }
+nav li a:hover,
 nav li .active {
   color: #fff;
-  font-weight: 500;
+  font-weight: bold;
 }
 main {
   position: relative;
   top: 60px;
+  margin-left: 70px; /* Offset for social icons */
+  padding: 100px 40px;
+  max-width: 1100px;
 }
-.intro {
-  display: block;
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social-icons a {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-icons a:hover {
+  color: #fff;
+}
+.social-icons::before {
+  content: "";
+  position: absolute;
+  top: -320px; /* Adjust to set the line height */
+  left: 50%; /* Center the line */
+  width: 2px;
+  height: 320px; /* Length of the line */
+  background-color: var(--secondary-color);
+  transform: translateX(-50%);
+}
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 50px;
 }
 .intro h4 {
   color: white;
   font-size: 32px;
+  line-height: 1.5;
 }
 .intro h4 span {
   color: var(--primary-color);
 }
 .intro p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--secondary-color);
+  margin-top: 10px;
 }
 .intro button {
   font-size: 1rem;
   color: white;
-  border: 0.5px solid var(--primary-color);
-  padding: 8px 16px;
+  border: 1px solid var(--primary-color);
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.img-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-description img {
+  width: 350px;
+}
+.img-description p {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  font-size: 1rem;
+  padding: 8px 12px;
+  margin: 0px;
+  width: 300px;
+}
+.img-description p .fa-square {
+  color: var(--primary-color);
+}
+.img-description p span {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .introduction {
+    flex-direction: column;
+    text-align: center;
+  }
+  header {
+    width: 100%;
+    left: 0;
+  }
+  main {
+    margin-left: 0;
+    padding: 80px 20px;
+  }
+  .social-icons {
+    display: none; /* Hide social icons on smaller screens */
+  }
 }
