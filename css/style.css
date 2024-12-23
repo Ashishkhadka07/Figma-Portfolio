@@ -137,10 +137,11 @@ main {
 }
 .quotation-box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
+  justify-content: right;
+  align-items: right;
+  height: auto;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 blockquote {
   position: relative;
@@ -187,6 +188,70 @@ blockquote .author::before {
   right: 1px;
   bottom: 5px;
   color: var(--secondary-color);
+}
+.projects {
+  max-width: 1100px;
+}
+.projects .title-project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 48px;
+}
+.projects .title-project span,
+.projects .title-project .fa-solid {
+  color: var(--primary-color);
+}
+.projects-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 350px;
+  height: 400px;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 200;
+  padding: 5px;
+}
+.projects-card .card-box {
+  padding: 0px 8px 10px 8px;
+  border: 1px solid var(--secondary-color);
+}
+.projects-card .card-box img {
+  width: 331px;
+  height: 201px;
+}
+.projects-card .card-box p {
+  padding: 5px;
+  font-weight: lighter;
+}
+.projects-card .card-box h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 5px;
+}
+.projects-card .card-box .btn-passive {
+  color: #ffffff;
+  border: 1px solid var(--secondary-color);
+  padding: 5px 15px;
+}
+.projects-card .card-box button {
+  color: #ffffff;
+  border: 1px solid var(--primary-color);
+  padding: 5px 15px;
+  margin: 10px;
+}
+.projects-card .card-box .btn-passive:hover {
+  color: var(--secondary-color);
+  border: 1px solid white;
+}
+.projects-card .card-box button:hover {
+  color: var(--secondary-color);
+  border: 1px solid white;
+  box-shadow: 1px 2px 1px #b0a2a2;
 }
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
