@@ -206,13 +206,12 @@ blockquote .author::before {
 .projects-card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   max-width: 350px;
   height: 400px;
   color: var(--secondary-color);
   font-size: 16px;
-  font-weight: 200;
   padding: 5px;
 }
 .projects-card .card-box {
@@ -252,6 +251,38 @@ blockquote .author::before {
   color: var(--secondary-color);
   border: 1px solid white;
   box-shadow: 1px 2px 1px #b0a2a2;
+}
+.skills h2 {
+  color: white;
+  margin-bottom: 12px;
+}
+.skills span {
+  color: var(--primary-color);
+}
+.skills .skill-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+  padding: 10px;
+}
+.skills .skill-box .skill-card {
+  max-width: 200px;
+  height: auto;
+}
+.skills .skill-box .skill-card h3 {
+  border: 1px solid var(--secondary-color);
+  padding: 5px 15px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.skills .skill-box .skill-card p {
+  border: 1px solid var(--secondary-color);
+  padding: 5px 15px;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: lighter;
 }
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
