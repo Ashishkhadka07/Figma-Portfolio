@@ -10,9 +10,15 @@
   background-color: var(--background-color);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+h2 {
+  color: white;
+  margin-bottom: 12px;
+}
+span {
+  color: var(--primary-color);
+}
 header {
   position: fixed;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,9 +101,6 @@ main {
   color: white;
   font-size: 32px;
   line-height: 1.5;
-}
-.intro h4 span {
-  color: var(--primary-color);
 }
 .intro p {
   font-size: 1.1rem;
@@ -194,12 +197,12 @@ blockquote .author::before {
 }
 .projects .title-project {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   color: white;
   margin-bottom: 48px;
 }
-.projects .title-project span,
 .projects .title-project .fa-solid {
   color: var(--primary-color);
 }
@@ -226,12 +229,6 @@ blockquote .author::before {
   padding: 5px;
   font-weight: lighter;
 }
-.projects-card .card-box h2 {
-  color: white;
-  font-size: 24px;
-  font-weight: 700;
-  padding: 5px;
-}
 .projects-card .card-box .btn-passive {
   color: #ffffff;
   border: 1px solid var(--secondary-color);
@@ -251,13 +248,6 @@ blockquote .author::before {
   color: var(--secondary-color);
   border: 1px solid white;
   box-shadow: 1px 2px 1px #b0a2a2;
-}
-.skills h2 {
-  color: white;
-  margin-bottom: 12px;
-}
-.skills span {
-  color: var(--primary-color);
 }
 .skills .skill-box {
   display: flex;
@@ -284,6 +274,33 @@ blockquote .author::before {
   font-size: 1rem;
   font-weight: lighter;
 }
+
+.about-me {
+  display: flex;
+  color: var(--secondary-color);
+  margin-top: 20px;
+  gap: 20px;
+}
+.about-me .about {
+  max-width: 40%;
+  height: 400px;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: lighter;
+}
+.about-me .image {
+  max-width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.about-me .about button {
+  color: #ffffff;
+  border: 1px solid var(--primary-color);
+  padding: 5px 15px;
+  margin-top: 20px;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .introduction {
