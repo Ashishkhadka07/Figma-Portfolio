@@ -301,6 +301,35 @@ blockquote .author::before {
   margin-top: 20px;
 }
 
+.contact-container {
+  margin-top: 20px;
+  color: var(--secondary-color);
+}
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.contact-box {
+  padding: 1rem;
+  background: #2d2d2d;
+  border: 1px solid #555;
+  text-align: center;
+}
+.contact-box h4 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.contact-box ul li {
+  list-style-type: none;
+  padding: 0.5rem;
+  margin: 5px 0;
+}
+.contact-box ul li a {
+  color: var(--secondary-color);
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .introduction {
