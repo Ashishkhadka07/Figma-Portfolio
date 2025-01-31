@@ -436,3 +436,28 @@ blockquote .author::before {
     width: 100%;
   }
 }
+
+/* Tablet View (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .social-icons {
+    left: 10px; /* Move social icons closer */
+  }
+
+  main {
+    margin-left: 30px;
+    padding: 60px 20px;
+  }
+
+  .projects-card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-box {
+    flex-wrap: wrap;
+  }
+
+  .about-me {
+    gap: 30px;
+  }
+}
