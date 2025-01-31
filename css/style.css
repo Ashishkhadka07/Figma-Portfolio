@@ -363,19 +363,76 @@ blockquote .author::before {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-  .introduction {
-    flex-direction: column;
-    text-align: center;
-  }
-  header {
-    width: 100%;
-    left: 0;
-  }
   main {
     margin-left: 0;
     padding: 80px 20px;
   }
+
+  header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    left: 0;
+  }
+
+  .introduction {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .social-icons {
     display: none; /* Hide social icons on smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    display: none; /* Hide menu by default */
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.show {
+    display: flex; /* Show menu when active */
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .img-description img {
+    width: 250px; /* Reduce image size */
+  }
+
+  .projects-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skill-box {
+    flex-direction: column;
+  }
+
+  .about-me {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image img {
+    width: 80%; /* Scale images */
+  }
+
+  .contact-container {
+    text-align: center;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-box {
+    width: 100%;
   }
 }
