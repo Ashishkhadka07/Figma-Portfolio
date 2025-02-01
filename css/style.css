@@ -218,7 +218,6 @@ blockquote .author::before {
   padding: 5px;
 }
 .projects-card .card-box {
-  padding: 0px 8px 10px 8px;
   border: 1px solid var(--secondary-color);
 }
 .projects-card .card-box img {
@@ -228,6 +227,9 @@ blockquote .author::before {
 .projects-card .card-box p {
   padding: 5px;
   font-weight: lighter;
+}
+.projects-card .card-box h2 {
+  padding: 5px;
 }
 .projects-card .card-box .btn-passive {
   color: #ffffff;
