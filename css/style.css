@@ -256,7 +256,6 @@ blockquote .author::before {
   justify-content: space-between;
   align-items: start;
   gap: 10px;
-  padding: 10px;
 }
 .skills .skill-box .skill-card {
   max-width: 200px;
