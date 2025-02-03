@@ -362,6 +362,13 @@ blockquote .author::before {
   color: #888;
 }
 
+.all-media ul {
+  display: flex;
+  color: var(--secondary-color);
+  gap: 2rem;
+  list-style: none;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   main {
